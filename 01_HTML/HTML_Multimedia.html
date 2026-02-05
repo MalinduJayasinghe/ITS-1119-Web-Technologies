@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multimedia</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+</head>
+<body>
+
+<!-- /////////////////////////////// <img> tag /////////////////////////////// -->
+
+<img src="Assets/softwareengineerf.jpg">
+<img src="Assets/softwareengineerc.jpg" alt="Software Engineer Image">
+<img src="Assets/softwareengineer.jpg" title="Software Engineer Image" alt="Software Engineer Image">
+<img src="Assets/softwareengineer.jpg" title="Software Engineer Image" alt="Software Engineer Image" width="200">
+
+<!-- /////////////////////////////// <picture> tag /////////////////////////////// -->
+
+<picture>
+    <source srcset="Assets/files/large.jpg" media="(min-width: 720px)" type="image/jpg" title="Large Image">
+    <source srcset="Assets/files/medium.jpg" media="(min-width: 640px)" type="image/jpg" title="Medium Image">
+    <source srcset="Assets/files/small.jpg" media="(min-width: 480px)" type="image/jpg" title="Small Image">
+
+    <img src="Assets/files/large.jpg" title="Large Image" alt="Small Image"> Default Image
+</picture>
+
+<!-- /////////////////////////////// <video> tag /////////////////////////////// -->
+
+<video controls autoplay muted loop poster="Assets/files/large.jpg">
+    <source src="Assets/files/videos/car.mp4" type="video/mp4">
+    <source src="Assets/files/videos/car.webm" type="video/webm">
+    If your browser does not support the video tag, it cycles through the available
+    formats to find one that it can run
+</video>
+
+<!-- /////////////////////////////// <track> tag /////////////////////////////// -->
+
+<video controls autoplay muted loop poster="Assets/files/large.jpg">
+    <source src="Assets/files/videos/car.mp4" type="video/mp4">
+    <source src="Assets/files/videos/car.webm" type="video/webm">
+    <track src="Assets/files/videos/subtitles/sample.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="Assets/files/videos/subtitles/arabic.vtt" kind="subtitles" srclang="ar" label="Arabic">
+</video>
+
+<!-- /////////////////////////////// <track> tag /////////////////////////////// -->
+
+<audio controls>
+    <source src="Assets/files/audios/audio_file1.mp3" type="audio/mp3">
+    <source src="Assets/files/audios/audio_file2.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
+
