@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinator</title>
+
+    <style>
+
+        /* /////////////////////////////////// Child Combinator (>) /////////////////////////////////// */
+
+        section > p {
+            color: red;
+        }
+
+        /* /////////////////////////////////// Decendant Combinator (" ") /////////////////////////////////// */
+
+        section p {
+            color: green;
+        }
+
+        /* /////////////////////////////////// Adjacent Combinator ( + ) /////////////////////////////////// */
+
+        h1 + h2{
+            color: mediumpurple;
+        }
+
+        /* /////////////////////////////////// General Siblings Combinator ( + ) /////////////////////////////////// */
+
+        h1 ~ h2{
+            color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h1>Sri Lanka</h1>
+    <div>Hello</div>
+    <h2>Jaffna</h2>
+    <h2>Colombo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h2>Galle</h2>
+    <h2>Panadura</h2>
+
+</body>
+</html>

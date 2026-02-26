@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Class Selectors</title>
+
+    <style>
+        /* /////////////////////////////////// Pseudo class /////////////////////////////////// */
+
+        h1{
+            color: blue;
+        }
+
+        h1:hover{
+            color: red;
+        }
+
+        h1:active{
+            color: orange;
+        }
+
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        /*li:first-child{
+            color: orange;
+        }
+
+        li:last-child{
+            color: red;
+        }
+
+        li:nth-child(2){
+            color: green;
+        }
+
+        li:nth-child(3){
+            color: purple;
+        }
+
+        li:nth-child(4){
+            color: deeppink;
+        }
+
+        li:nth-child(5){
+            color: lime;
+        }
+
+        li:nth-last-child(4){
+            color: red;
+        }*/
+
+        /*li:nth-child(odd) {
+            color: orange;
+        }
+
+        li:nth-child(even) {
+            color: red;
+        }
+
+        li:nth-child(n+5){
+            color: deepskyblue;
+        }*/
+
+        li:nth-child(3n+1) {
+            color: mediumpurple;
+        }
+
+    </style>
+</head>
+    <body>
+
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Element Selectors</title>
+
+    <style>
+
+        /* /////////////////////////////////// Pseudo elements /////////////////////////////////// */
+
+        h1::after{
+            content: "Hello!";
+            background-color: pink;
+        }
+
+        h1::before{
+            content: "Welcome to ";
+            background-color: deeppink;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+        }
+
+        p::first-line{
+            color: dodgerblue;
+        }
+
+        li::marker{
+            content:"⭐";
+        }
+
+        input::file-selector-button{
+            color: red;
+        }
+
+        input::placeholder{
+            color: blue;
+        }
+
+        ::selection{
+            color: red;
+            background-color: pink;
+        }
+
+        /*Prevents user from selecting content
+        /*p{
+            user-select: none;
+        }*/
+
+    </style>
+</head>
+<body>
+
+    <h1>Sri Lanka!</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Go</li>
+    </ul>
+
+    <form>
+        <input type="file">
+        <input type="text" placeholder="Enter your name">
+    </form>
+
+</body>
+</html>

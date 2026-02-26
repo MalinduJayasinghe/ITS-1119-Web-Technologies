@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity Calculation</title>
+    <style>
+
+        #mybtn{ /* (0,1,0,0) */
+            background-color: green;
+        }
+
+        button{ /* (0,0,0,1) */
+            background-color: red;
+        }
+
+        .btn{ /* (0,0,1,0) */
+            background-color: blue;
+        }
+
+        body > section > h1 { /* (0,0,0,1) + (0,0,0,0) + (0,0,0,1) + (0,0,0,0) + (0,0,0,1) = (0,0,0,3) */
+            color: orange;
+        }
+
+        section > h1 { /* (0,0,0,1) + (0,0,0,0) + (0,0,0,1) = (0,0,0,2) */
+            color: red;
+        }
+
+        h1 { /* (0,0,0,1) */
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="mybtn" class="btn">Click Me</button>
+
+    <section>
+        <h1>Hello World!</h1>
+    </section>
+</body>
+</html>
