@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Flex Layout</title>
+  <link rel="stylesheet" href="../Assets/lib/normalize.css">
+
+  <style>
+
+      section{
+        background-color: yellow;
+        display: flex;
+
+        /*flex-direction: column; /*column , row(default) */
+        flex-direction: row-reverse; /*column reverse, row reverse*/
+      }
+
+      section > div {
+
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border: 2px solid blue;
+      }
+
+  </style>
 </head>
 <body>
-$END$
+
+    <section>
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </section>
+
 </body>
 </html>
