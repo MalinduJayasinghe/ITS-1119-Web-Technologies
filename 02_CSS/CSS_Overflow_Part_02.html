@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Overflow Part 02</title>
+  <link rel="stylesheet" href="../Assets/lib/normalize.css">
+
+  <style>
+
+    section{
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+
+      /*overflow: hidden;*/
+      /*overflow: scroll;*/
+    }
+
+    section > div:first-child{
+      width: 3000px;
+      height: 100px;
+      background: orange;
+    }
+
+    section > div:nth-child(2){
+      width: 100px;
+      height: 3000px;
+      background: purple;
+    }
+
+    body{
+      /*overflow: hidden;*/
+      /*overflow-x: hidden;*/
+      /*overflow-y: hidden;*/
+    }
+
+  </style>
+</head>
+<body>
+
+<section>
+  <div></div>
+  <div></div>
+</section>
+
+</body>
+</html>
