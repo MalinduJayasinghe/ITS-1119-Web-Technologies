@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Animations</title>
+
+  <link rel="stylesheet" href= "../Assets/lib/normalize.css">
+
+  <style>
+
+        div{
+          width: 150px;
+          height: 150px;
+          background: yellow;
+          border: 5px solid black;
+          animation-name: ani;
+          animation-duration: 8s;
+          position: absolute;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes ani {
+          from{
+            background: red;
+            left: 0px;
+          }to{
+            background: blue;
+            left: 1000px;
+          }
+        }
+
+  </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>

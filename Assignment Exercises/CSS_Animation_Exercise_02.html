@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS CDN Libraries</title>
+
+  <link rel="stylesheet" href= "../Assets/lib/normalize.css">
+
+  <style>
+
+      section{
+        margin-top: 30px;
+        width: 400px;
+        height: 200px;
+        background: deepskyblue;
+        border: 5px solid blue;
+        position:absolute;
+
+        animation-name: bus-animation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+
+      section > div{
+        width: 100px;
+        height: 100px;
+        background: lightgray;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-right: 5px solid grey;
+        border-left: 5px solid grey;
+        border-radius: 100%;
+        position: absolute;
+
+        animation-name: wheel-animation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+
+      #wheel1{
+        left: 25px;
+        top: 150px;
+      }
+
+      #wheel2{
+        left: 265px;
+        top: 150px;
+      }
+
+      @keyframes bus-animation {
+        from{
+          left: 0px;
+        }
+        to{
+          left: 1000px;
+        }
+      }
+
+      @keyframes wheel-animation {
+        from{
+          transform: rotate(-360deg);
+        }
+      }
+
+  </style>
+</head>
+<body>
+
+    <section>
+      <div id = "wheel1"></div>
+      <div id = "wheel2"></div>
+    </section>
+
+</body>
+</html>

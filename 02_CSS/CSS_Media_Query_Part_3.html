@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Media Query Part 03</title>
+
+  <link rel="stylesheet" href= "../Assets/lib/normalize.css">
+
+  <style>
+
+    section{
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    div{
+      height: 500px;
+      border: 5px solid red;
+      background-image: url("../Assets/files/images/emoji.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media all and (max-width: 1300px) {
+      section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media all and (max-width: 1000px) {
+      section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media all and (max-width: 800px) {
+      section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </section>
+
+</body>
+</html>

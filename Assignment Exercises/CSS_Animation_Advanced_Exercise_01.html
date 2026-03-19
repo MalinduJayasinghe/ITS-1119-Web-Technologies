@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Animation Advanced Exercise</title>
+
+  <link rel="stylesheet" href= "../Assets/lib/normalize.css">
+
+  <style>
+
+    section{
+      position: relative;
+      width: 1000px;
+      height: 600px;
+    }
+
+    div{
+      width: 200px;
+      height: 100px;
+      background: blue;
+      border-radius: 20px;
+
+      animation-name: move;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+
+
+    }
+
+    @keyframes move {
+      0%{
+        margin-left: 0;
+        margin-top: 0;
+        transform: rotate(180deg);
+        background: blue;
+      }
+      25%{
+        margin-left: 900px;
+        margin-top: 0;
+        transform: rotate(-180deg);
+        background: yellow;
+      }
+      50%{
+        margin-left: 900px;
+        margin-top: 500px;
+        transform: rotate(180deg);
+        background: red;
+      }
+      75%{
+        margin-left: 0;
+        margin-top: 500px;
+        transform: rotate(-180deg);
+        background: hotpink;
+      }
+      100%{
+        margin-left: 0;
+        margin-top: 0;
+        transform: rotate(180deg);
+        background: orange;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+    <section>
+      <div></div>
+    </section>
+
+</body>
+</html>
