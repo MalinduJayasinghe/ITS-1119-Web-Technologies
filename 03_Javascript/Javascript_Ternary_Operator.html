@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Ternary Operator</title>
+</head>
+<body>
+
+    <script>
+
+        var num = 10;
+
+       var result = (num % 2 === 0) ? "Even" : "Odd";
+       console.log("Result: ", result);
+
+        var marks = 77;
+
+        var grade = (marks >= 75 ) ? "A":
+            (marks >= 65) ? "B":
+                (marks >= 55) ? "C":
+                    (marks >= 35) ? "S": "F";
+        console.log("Grade: ", grade);
+
+    </script>
+
+</body>
+</html>

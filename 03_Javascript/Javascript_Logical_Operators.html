@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Logical Operators</title>
+</head>
+<body>
+
+  <script>
+
+    //Logical AND (&&): Returns true only if both operands are true
+    console.log(true && true); //true
+    console.log(true && false); //false
+    console.log(false && false); //false
+    console.log(true && true && true && true); //true
+    console.log(true && true && true && false); //false
+
+    //Logical OR (||): Returns true if at least one operand is true
+    console.log(true || true); //true
+    console.log(true || false); //true
+    console.log(false || false); //false
+    console.log(true || true || true || true); //true
+    console.log(true || true || true || false); //true
+    console.log(false || false || false || false); //false
+    console.log(true || false || false || false); //true
+
+    //Logical NOT (!): Returns the opposite of the actual output
+    console.log(!true); //true
+    console.log(!false); //false
+
+  </script>
+
+</body>
+</html>

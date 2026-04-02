@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Part 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!--
+  In Bootstrap, rows con be contained inside a container and columns are contained inside those rows
+  -->
+</head>
+<body>
+
+  <div class="container">
+  <!--
+  <div class="container-fluid">
+  Same as container class but expands the container's borders to the screen max width
+  -->
+
+    <!--
+    <div class="row">
+
+      <div class="col" style="background: red">A</div>
+      <div class="col" style="background: blue">B</div>
+      <div class="col" style="background: green">C</div>
+      <div class="col" style="background: orange">D</div>
+      <div class="col" style="background: deeppink">E</div>
+
+    </div>
+    -->
+
+      <!--
+      <div class="row">
+
+          <div class="col" style="background: red">A</div>
+          <div class="col" style="background: green">B</div>
+          <div class="col" style="background: blue">C</div>
+
+      </div>
+
+      <div class="row">
+
+          <div class="col" style="background: orange">A</div>
+          <div class="col" style="background: purple">B</div>
+          <div class="col" style="background: yellow">C</div>
+          <div class="col" style="background: deeppink">D</div>
+
+      </div>
+
+      <div class="row">
+
+          <div class="col" style="background: red">A</div>
+          <div class="col" style="background: blue">B</div>
+          <div class="col" style="background: green">C</div>
+
+      </div>
+      -->
+
+      <div class="row">
+
+          <div class="col-4" style="background: red">A</div>
+          <!--
+          The col class in bootstrap can be assigned values from col-1 to col-12 to increase the length of that
+          specific column (12 is the max and takes up an entire line, automatically pushing the other columns down)
+
+          The way it works is that the col class can have a max of 12 grids per line that are divided among the
+          created columns.
+
+          The col-class names make it so that the specified column merges with the given number of grids, and the
+          remaining space is shared by the other columns.
+
+          If the value given to one column is 12 or the total of some columns adds up to 12, the remaining columns are
+          automatically pushed down to the next line.
+
+          If col-values aren't mentioned, you can put any number of columns in a single line; it is not limited to 12.
+          -->
+          <div class="col" style="background: blue">B</div>
+          <div class="col" style="background: green">C</div>
+          <div class="col" style="background: yellow">C</div>
+          <div class="col" style="background: orange">D</div>
+          <div class="col" style="background: violet">E</div>
+          <div class="col" style="background: black">F</div>
+          <div class="col" style="background: purple">G</div>
+
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

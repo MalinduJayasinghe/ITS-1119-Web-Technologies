@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript String Methods</title>
+</head>
+<body>
+
+  <script>
+
+    let result;
+    let x = "Hello, World";
+
+    <!-- charAt(): Returns the character at a specified index in a string. -->
+    result = x.charAt(7);
+    console.log(result); //W
+    result = x.charAt(9);
+    console.log(result); // r
+
+    <!-- charCodeAt(): Returns the Unicode of the character at a specified index in a string. -->
+    result = x.charCodeAt(0);
+    console.log(result); // 72
+    result = x.charCodeAt(1);
+    console.log(result); // 101
+
+    <!-- concat(): Combines two or more strings-->
+    var a = "Hello";
+    var b = "Hi";
+    var c = "Wow";
+
+    result = a.concat(b);
+    console.log(result); // HelloHi
+
+    result = a.concat(b,c);
+    console.log(result); // HelloHiWow
+
+    result = a.concat("*",b,"*",c);
+    console.log(result); // Hello*Hi*Wow
+
+    <!-- endsWith(): Checks whether a string ends with specified characters. -->
+    var url1 = "www.ijse.lk";
+    var url2 = "www.wikipedia.com";
+    var url3 = "https://rootcode.io";
+
+    result = url1.endsWith(".lk");
+    console.log(result); //true
+
+    result = url2.endsWith(".com");
+    console.log(result); //true
+
+    result = url3.endsWith(".com");
+    console.log(result); //false
+
+    <!-- startsWith(): Checks whether a string starts with specified characters. -->
+    result = url1.startsWith("www");
+    console.log(result); //true
+
+    result = url2.startsWith("www");
+    console.log(result); //true
+
+    result = url3.startsWith("www");
+    console.log(result); //false
+
+    <!-- includes(): Checks whether a string contains the specified substring. -->
+    var fruits = "mango bananaapple orange";
+
+    result = fruits.includes("mango");
+    console.log(result); //true
+
+    result = fruits.includes("bananaap");
+    console.log(result); //true
+
+    result = fruits.includes("pineapple");
+    console.log(result); //false
+
+
+    /* search(): Searches a string for a specified value or regular expression pattern and returns the index
+       of the first match. If no match is available, it returns -1.
+    */
+    result = fruits.search("bananaap");
+    console.log(result); // 6
+
+    result = fruits.search("pineapple");
+    console.log(result); // -1
+
+
+    /* replace(): Searches a string for a specified value or regular expression pattern and replaces it with
+       another string. It only replaces the string for the first value that meets the conditions, not for all
+       of them.
+    */
+    var y = "Hello, World !";
+    result = y.replace("World", "IJSE");
+    console.log(result); // Hello IJSE !
+
+    var y = "A B C D E F"
+    result = y.replace(" ", ",");
+    console.log(result); // A,B C D E F
+
+
+    /* replaceAll(): Replaces all the specified values with another string*/
+    result = y.replaceAll(" ", ",");
+    console.log(result); // A,B,C,D,E,F
+
+
+    /* slice(): Extracts a part of a string and returns a new string. */
+    x = "Hello, World!";
+    result = x.slice(2, 8);
+    console.log(result); //llo, W
+
+
+    /* substring(): Extracts a specified number of characters from a string, starting at a specified index. */
+    x = "Hello, World!";
+    result = x.substring(2, 8);
+    console.log(result); //llo, W
+
+
+    /* split(): Splits a string into an array of substrings based on a specified delimiter. */
+    x = "mango, banana, apple, orange";
+    result = x.split(",");
+    console.log(result); // Array(4) [ "mango", " banana", " apple", " orange" ]
+
+    x = "mangoxxbananaxxapplexxorange";
+    result = x.split("xx");
+    console.log(result); //Array(4) [ "mango", "banana", "apple", "orange" ]
+
+
+    /* toLocaleLowerCase() and toUpperCase(): Converts a string to lowercase or uppercase according to the
+       host's locale.
+    */
+    var msg = "Hello! Welcome to Sri Lanka";
+
+    result = msg.toLowerCase();
+    console.log(result); //hello! welcome to sri lanka
+
+    result = msg.toUpperCase();
+    console.log(result); //HELLO! WELCOME TO SRI LANKA
+
+
+    /* trim(): Removes whitespace from both ends of a string. */
+    msg = "     Hello! Welcome to Sri Lanka     ";
+    console.log(msg); // "     Hello! Welcome to Sri Lanka     "
+    result = msg.trim();
+    console.log(result); // Hello! Welcome to Sri Lanka
+
+
+    /* length: Get the length of the string */
+    x = "ABCDEF";
+    console.log(x.length); //6
+
+  </script>
+
+</body>
+</html>

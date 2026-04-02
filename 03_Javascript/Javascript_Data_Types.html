@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Data Types</title>
+</head>
+<body>
+
+  <script>
+
+    /** Primitive Data Types
+     * Number
+     * String
+     * Boolean
+     * Null
+     * undefined
+     * Symbol
+     * BigInt
+     */
+
+    /** Object Data Types (Non-Primitive Data Types)
+     * Array
+     * Object
+     * Function
+     */
+
+    // The typeof command displays the data type of the relevant value
+
+    console.log(typeof 10); //number
+    var x = 10;
+    console.log(typeof x); //number
+    console.log(typeof 10.5); //number - not float/decimal (doesn't exist in JavaScript)
+
+    console.log(typeof "Hello"); // string
+    console.log(typeof 'Hello'); // string - not char (doesn't exist in JavaScript)
+
+    console.log(typeof true); // boolean
+    console.log(typeof false); // boolean
+
+    var y = undefined;
+    console.log(typeof undefined); //undefined
+
+    var z = null;
+    console.log(typeof null); //object
+
+    /*
+    A primitive data type called null does exist, but when specifically asking what the data type of null is,
+    it is returned as an object data type. This is another error/mistake that arose because JavaScript was
+    originally developed in just 10 days
+    */
+
+    /*
+    null is a primitive value that represents the intentional absence of any object value.
+    undefined is a primitive value used when a variable has not been assigned a value.
+
+    Reading-Resource: https://dev.to/sduduzog/null-vs-undefined-what-to-choose-what-to-use-11g
+    */
+
+    var a = {};
+    console.log(typeof {}); //object
+
+    var b = [10, 20, 30, 40, 50]; // In Java - int [] b = {10, 20, 30, 40, 50}
+    console.log(typeof []); // object
+
+    var myMethod = function () {}
+    console.log(typeof function () {});
+
+  </script>
+
+</body>
+</html>
