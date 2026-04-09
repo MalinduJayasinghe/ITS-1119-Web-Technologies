@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+
+  <h1 id = "topic">Courses</h1>
+
+  <h2 name = "subtopic-1">HTML Course</h2>
+  <p class="myClass">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <h2>CSS Course</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <h2 name = "subtopic-1">JavaScript Course</h2>
+  <p class="myClass">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <ol>
+    <li>
+      <div>A</div>
+    </li>
+    <li>
+      <div>B</div>
+    </li>
+    <li>
+      <div>C</div>
+    </li>
+
+  </ol>
+
+  <ul>
+    <li>
+      <div>D</div>
+    </li>
+    <li>
+      <div>E</div>
+    </li>
+    <li>
+      <div>F</div>
+    </li>
+  </ul>
+
+  <script>
+
+    //document.getElementById("topic") = <h1 id="topic" style="color: red;">
+    var h1_element = document.getElementById("topic");
+    h1_element.style.color = "red";
+
+
+    //document.getElementsByTagName("h1") = HTMLCollection { 0: h1#topic, length: 1, … }
+    var h2_elements = document.getElementsByTagName("h2"); // [h2,h2,h2]
+    var first_element = h2_elements[0];
+    var second_element = h2_elements[1];
+    var third_element = h2_elements[2];
+
+    first_element.style.color = "red";
+    second_element.style.color = "blue";
+    third_element.style.color = "green";
+
+
+    //document.getElementsByClassName("myClass") = HTMLCollection { 0: p.myClass, 1: p.myClass, length: 2 }
+    var myClass_element = document.getElementsByClassName("myClass");
+    var myClass_element1 = myClass_element[0];
+    var myClass_element2 = myClass_element[1];
+
+    myClass_element1.style.color = "orange";
+    myClass_element2.style.color = "yellow";
+
+
+    //document.getElementsByName("subtopic-1") = NodeList [ h2, h2 ]
+    var subtopic_element = document.getElementsByName("subtopic-1");
+    subtopic_element[0].style.backgroundColor = "pink";
+    subtopic_element[1].style.backgroundColor = "orange";
+
+    //document.querySelector("ol > li:first-child > div") = <div style="color: red;">
+    document.querySelector("ol > li:first-child > div").style.color = "red";
+    document.querySelector("ol > li:last-child > div").style.color = "deeppink";
+    document.querySelector("ol").style.color = "green";
+
+    //document.querySelectorAll("li:first-child > div") = NodeList [ div, div ]
+    var div_element = document.querySelectorAll("li:first-child > div");
+    div_element[0].style.color = "red";
+    div_element[1].style.color = "orange";
+
+  </script>
+
+</body>
+</html>

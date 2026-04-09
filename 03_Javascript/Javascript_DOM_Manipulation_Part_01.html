@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Selectors</title>
+</head>
+<body>
+
+    <h1 id = "topic">Welcome to JavaScript!</h1>
+    <div id = "div1"><h3>Welcome</h3> to India!</div>
+
+<script>
+
+    /* Selectors
+        * getElementbyId() - search for elements by element id
+                const element = document.getElementId("myElement");
+        * getElementsByTagName() - search for elements by tag name
+        * getElementsByClassName() -
+        * getElementsByName() -
+        * querySelector() - returns first elements that match the specified selector
+        * querySelectorAll() - returns all elements that match the specified selector
+        * */
+
+    var element = document.getElementById("topic");
+    var txt = element.innerText;
+    console.log(txt); // Welcome to JavaScript!
+
+    element.innerText = "Hi!! Welcome to Sri Lanka!";
+    console.log(element.innerText); // Hi!! Welcome to Sri Lanka!
+    console.log(element.innerHTML); // Hi!! Welcome to Sri Lanka!
+
+    var div_element = document.getElementById("div1");
+    console.log(div_element.innerText); // Welcome /n to India!
+    console.log(div_element.innerHTML); // <h3>Welcome</h3> to India!
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listeners</title>
+
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+            background: lightskyblue;
+            border: 5px solid blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button id = "btn"> Click </button>
+    <input  id = "text" type = "text">
+    <div id = "div"></div>
+
+    <script>
+
+        //JS Event Listener is a function that waits for a specific event to occur on an HTML element and then
+        // executes a given task
+
+        //<element>.addEventListener(<event_type>, <task as a function>);
+
+        //click event
+        document.getElementById("btn").addEventListener("click", () => {
+           console.log("Clicked");
+        });
+
+        //double click event
+        document.getElementById("btn").addEventListener("dblclick", () => {
+            console.log("Double Clicked");
+        })
+
+        //input event
+        document.getElementById("text").addEventListener("input", () => {
+            let msg = document.getElementById("text").value;
+            console.log("Typing...", msg);
+        })
+
+
+        /*//Windows Events (works within the entire browser)
+        window.addEventListener("keydown", () => {
+            console.log("KeyDown");
+        })
+
+        window.addEventListener("keypress", (e) => {
+            console.log("KeyPress");
+        })
+
+        window.addEventListener("keyup", (e) => {
+            console.log("KeyUp");
+        })*/
+
+        /*//Mouse Events
+        document.getElementById("div").addEventListener("mouseover", () => {
+            console.log("Mouseover");
+        })
+
+        document.getElementById("div").addEventListener("mouseleave", () => {
+            console.log("Mouseout");
+        })
+
+        document.getElementById("div").addEventListener("mouseenter", () => {
+            console.log("Mouseenter");
+        })*/
+
+        //Event Objects
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                console.log("Enter Pressed");
+            }
+        })
+
+    </script>
+
+</body>
+</html>

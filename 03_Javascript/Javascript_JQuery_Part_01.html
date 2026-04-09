@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+</head>
+<body>
+
+<h1>Hello World</h1>
+<h2>Hello World</h2>
+<h3>Hello World</h3>
+
+<section>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  </p>
+</section>
+
+<script src="../Assets/lib/jquery-4.0.0.min.js"></script>
+<script>
+
+  //Normal JavaScript Code
+  /*let h1_element = document.getElementsByTagName("h1");
+  let first_element = h1_element[0];
+  let second_element = h1_element[1];*/
+
+  //JQuery
+  /*let h1_element = $("h1");
+  let first_element = h1_element[0];
+  let second_element = h1_element[1];*/
+
+  //Shorter JQuery
+  /*let first_element = $("h1").eq(0);
+  let second_element = $("h1").eq(1);*/
+
+  //JQuery getInnerText
+  /*let first_element_text = $("h1").eq(0).text();
+  let second_element_text = $("h1").eq(1).text();
+  console.log(first_element_text);
+  console.log(second_element_text);*/
+
+
+  //Update Inner Text
+  /*$("h1").eq(1).text("Hello Sri Lanka");*/
+
+  //Get Inner HTML
+  /*let section_inner_html = $("section").eq(0).html();*/
+
+  //Update Inner HTML
+  $("section").eq(0).html("Welcome to IJSE");
+
+
+</script>
+
+</body>
+</html>

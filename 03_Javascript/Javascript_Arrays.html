@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Arrays</title>
+</head>
+<body>
+
+    <script>
+
+        /* In JavaScript Arrays, we con include numbers, string values and even functions, boolean values, and
+        other arrays inside a single array.*/
+
+        /* There are two ways to create arrays in JavaScript*/
+
+                /*1) Literal Based
+                =================
+
+                In Java =>/* int[] x = {10, 20, 30, 40, 50}*/
+
+                /*In JavaScript => /*let y = [];
+                                 y = [10, 20, 30, 40, 50];
+                                 console.log(y);*/
+
+                                 x = [10, 20, 30, 40, 50, "Sri Lanka", function() {console.log("Hi!!!")}, ["A", "B", "C"], true]
+                                 console.log(x);
+
+                                 console.log(x[0]); // 10
+                                 console.log(x[1]); // 20
+                                 console.log(x[2]); // 30
+                                 console.log(x[3]); // 40
+                                 console.log(x[4]); // 50
+                                 console.log(x[5]); // Sri Lanka
+                                 console.log(x[6]); // f () {console.log("Hi!!!")}
+                                 console.log(x[7]); // ["A", "B", "C"]
+                                 console.log(x[8]); // true
+
+                                 console.log(x[9]); // ** undefined - not Index out of bounds like in Java
+
+                                 console.log(x[7][0]); // A
+                                 console.log(x[7][1]); // B
+                                 console.log(x[7][2]); // C
+                                 console.log(x[7][3]); // undefined
+
+                                 x[6] ();
+
+                                 // Update Array =========================================================
+                                 /* x[0] = "UK";
+                                    x[1] = function (a, b) {return a + b};
+                                    x[2] = "Feb";
+
+                /*2) Constructor Based
+                ====================
+
+                let y = new Array(10, 20, 30, 40, 50);
+                console.log(y);
+
+         */
+        // But in 2015, EM6 introduced 2 new ways
+
+    </script>
+
+</body>
+</html>

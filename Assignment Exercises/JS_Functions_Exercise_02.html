@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+
+    /* //////////////////////////// Function Expression //////////////////////////// */
+
+    /*
+    const findFactorial = function(num){
+
+
+      var fact = 1;
+      for ( var i = num; i > 0; i--){
+
+         fact = fact * i;
+      }
+      console.log("Factorial of " + num + ":", fact );
+      return fact;
+    }
+
+    findFactorial(5);
+    */
+
+    /* //////////////////////////// Arrow Functions //////////////////////////// */
+
+    const findFactorial = (num) => {
+
+      var fact = 1;
+      for ( var i = num; i > 0; i--){
+
+        fact = fact * i;
+      }
+      console.log("Factorial of " + num + ":", fact );
+      return fact;
+    }
+
+    findFactorial(5);
+
+  </script>
+
+</body>
+</html>

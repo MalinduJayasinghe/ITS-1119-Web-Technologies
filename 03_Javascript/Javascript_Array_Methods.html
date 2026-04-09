@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Array Methods</title>
+</head>
+<body>
+
+<script>
+
+  // Push Method - Adds a new element to the end of an array ///////////////////////////////////////////////
+
+  /*/
+  let x = ["Mahinda", "Ranil", "Anura"];
+  x.push("Puthano");
+  console.log(x); // ["Mahinda", "Ranil", "Anura", "Puthano"]
+
+  // Pop Method - Removes the element at the end of an array and returns that element ////////////////////////
+
+
+  x.pop();
+  console.log(x); // ["Mahinda", "Ranil", "Anura"]
+
+  // Shift Method - Removes the first element of an array ///////////////////////////////////////////////////
+
+
+  x.shift();
+  console.log(x); //["Ranil", "Anura"]
+
+  // Unshift Method - adds one or more elements to the beginning of an array /////////////////////////////////
+
+
+  x.unshift("Gota");
+  console.log(x); //["Gota", "Ranil", "Anura"]
+
+  x.unshift("Namal", "Yoshita");
+  console.log(x); //["Namal", "Yoshita", "Gota", "Ranil", "Anura"]
+   */
+
+  // Concat Method - adds one or more elements to the beginning of an array //////////////////////////////////
+
+  /*
+  let a = [1, 2, 3, 4, 5];
+  let b = [6, 7, 8, 9];
+  let c = [10, 11, 12, 13];
+
+  var x = a.concat(b);
+  console.log(x); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+  var y = b.concat(a);
+  console.log(y); // [ 6, 7, 8, 9, 1, 2, 3, 4, 5 ]
+
+  var z = a.concat(b,c);
+  console.log(z); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, … ]
+   */
+
+  // Slice Method - Gets a copy of a portion of the array ///////////////////////////////////////////////////
+/*
+  var y = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+  var a = y.slice(3);
+  console.log(a) // [40, 50, 60, 70, 80, 90, 100]
+
+  var b = y.slice(3,8);
+  console.log(b) // [40, 50, 60, 70, 80]
+
+  var c = y.slice(-1);
+  console.log(c) // [100]
+
+  var d = y.slice(-3);
+  console.log(d) // [80, 90, 100]
+  */
+
+  // Splice Method - Can add or remove any element in a specified position //////////////////////////////////
+
+  var x = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+  var a = x.splice(7);
+  console.log(a) // [80, 90, 100] removed elements
+  console.log(x) // [10, 20, 30, 40, 50, 60, 70]
+
+  var b = x.splice(1, 5, 100, 200, 300);
+  console.log(b) // [20, 30, 40, 50, 60]
+  console.log(x) // [10, 100, 200, 300, 70] splice values removed and new ones added
+
+
+  //includes
+
+  /*
+  var fruits = ["Mango", "Pineapple", "Banana", "Apple"];
+
+  console.log(fruits.includes('banana')); // true
+  console.log(fruits.includes('grape'));  // false
+  console.log(fruits.includes('Apple'));  // false (case-sensitive)
+
+  // Using the second parameter (fromIndex)
+  console.log(fruits.includes('apple', 1)); // false (starts search at index 1)
+  */
+
+  //forEach - executes a provided function for each array ///////////////////////////////////////////////////////
+
+  /*fruits.forEach(function (item){
+      console.log(item);
+  })*/
+
+  //map -  executes a provided function for each array ///////////////////////////////////////////////////////
+
+  /*
+    fruits.map(item => {
+        console.log(item);
+    });
+   */
+
+  /*
+  fruits.map((item) => {
+      console.log(item);
+  });
+   */
+
+  /*
+  fruits.map((item, index) => {
+      console.log(index + " : " + item);
+  });
+   */
+
+  // filter - filters and displays elements that satisfy conditions//////////////////////////////////////////////////
+
+  /*
+  var k = [10, 11, 20, 21, 30, 31, 40, 41, 50, 51];
+
+  let ans = k.filter( function (item) {
+      let result = item % 2 === 0;
+      return result;
+  });
+
+  console.log("Even Number List: ", ans)
+   */
+
+  // sort - Sorts the elements of an array ////////////////////////////////////////////////
+  /*
+  let j = [12, 10, 25, 22, 13, 20, 55, 41, 67, 42, 11];
+  let j_sort = j.sort(); // ascending order
+  console.log(j_sort); // [ 10, 11, 12, 13, 20, 22, 25, 41, 42, 55, 67 ]
+  */
+  /*
+  let j_reverse = j.sort((a, b) => b - a); // descending order
+  console.log(j_reverse); // [ 67, 55, 42, 41, 25, 22, 20, 13, 12, 11, 10 ]
+  */
+
+  //reverse - display the elements in an array in reverse /////////////////////////////////////////////////
+
+  var v = ["A", "B", "C", "D", "E", "F"];
+  var reverse_v = v.reverse();
+  console.log(reverse_v);
+
+
+
+  // join -  /////////////////////////////////////////////////////////////////////////
+
+  var join_r1 = v.join(", ");
+  var join_r2 = v.join(" * ");
+  var join_r3 = v.join(" => ");
+  var join_r4 = v.join(" # ");
+
+  console.log(join_r1) //   F, E, D, C, B, A
+  console.log(join_r2) //   F * E * D * C * B * A
+  console.log(join_r3) //   F => E => D => C => B => A
+  console.log(join_r4) //   F # E # D # C # B # A
+
+
+</script>
+
+</body>
+</html>
